@@ -1,0 +1,42 @@
+body {
+    margin: 0
+    }
+.target1 
+{
+    width: 600px;
+    height: 400px;
+    background:  black;
+}
+.target2 {
+    width: 600px;
+    height: 75px;
+    background: chocolate
+}
+.target3 {
+    width: 150px;
+    height: 250px;
+    background: red;
+}
+.target4 {
+    width: 150px;
+    height: 250px;
+    background: green;
+
+}
+.target5 {
+    width: 150px;
+    height: 250px;
+    background: blue;
+
+}
+.target6 {
+    width: 150px;
+    height: 250px;
+    background: gray;
+
+}
+.target7 {
+    width: 600px;
+    height: 75px;
+    background: chocolate
+}
