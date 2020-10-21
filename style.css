@@ -3,19 +3,25 @@ body {
     }
 .target1 
 {
-    width: 600px;
-    height: 400px;
+    width: 620px;
+    height: 420px;
     background:  black;
-}
+    position: absolute;
+    }
 .target2 {
     width: 600px;
     height: 75px;
-    background: chocolate
+    background: chocolate;
+    position: absolute;
+    margin: 10px; 
+
+    
 }
 .target3 {
     width: 150px;
     height: 250px;
     background: red;
+    
 }
 .target4 {
     width: 150px;
@@ -38,5 +44,19 @@ body {
 .target7 {
     width: 600px;
     height: 75px;
-    background: chocolate
+    background: chocolate;
+    position: relative;
+    top: 335px;
+    left:10px;
 }
+.target3, .target4, .target5, .target6 {
+   top: 85px;
+   left:10px;
+    float: left;
+    position: relative;
+}
+    
+  
+
+
+
