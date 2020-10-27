@@ -1,0 +1,95 @@
+.top-menu {
+    padding-left: 200px;
+    padding-right: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-list>a {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 11px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+.center {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 90px;
+    background: brown;
+    box-sizing: border-box;
+    border: brown solid 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left_side {
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.ukr_title {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 35px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.under_title {
+    font-size: 11px;
+    color: white;
+    text-align: center;
+}
+.right_side>a {
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+
+}
+button {
+    margin-left: 15px;
+    width: 80px;
+    height: 40px;
+    background-color: tomato;
+    border: solid 2px white;
+    border-radius: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.buttom-menu {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.buttom-list>a {
+   
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    
+}
+span {
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+    
+
