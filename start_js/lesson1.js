@@ -216,7 +216,21 @@
 // console.log(result);
 
 // - при помощи prompt()  получить 3 числа с плавающей точекой. при помощи parseFloat привести их к соответсвующему типу. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
-document.write('не знаю як')
+// let a1 = prompt('Ввести значення а1');
+// a1 = parseFloat(a1);
+// console.log(a1)
+
+// let a2 = prompt('Ввести значення а2');
+// a2 = parseFloat(a2);
+// console.log(a2)
+
+// let a3 = prompt('Ввести значення а3');
+// a3 = parseFloat(a3);
+// console.log(a3)
+
+// let result = (a1+a2+a3);
+// console.log(result);
+
 
 // - При помощи оператора опредеоения типа typeof определить типы следующих переменных и вывести их в консоль let a = 100; let b = '100'; let c = true; let d = undefined;
 
@@ -230,7 +244,10 @@ document.write('не знаю як')
 // console.log (typeof d);
 
 // - при помощи prompt()  получить 2 целых числа. Привести их к целочисленному типу. Первое число - это число которое будут возводить в степень. Второе число - это число которое является степенью. При помощи Math.pow возвести первое число в степень второго числа.
-
+// let a = parseFloat(prompt("Введіть число", "2,5"));
+// let b = parseFloat(prompt("Введіть число", "2,5"));
+// let c = Math.pow(a, b);
+// console.log(c)
 
 
 
@@ -289,10 +306,9 @@ document.write('не знаю як')
 // console.log(!!'undefined'); //t
 // console.log(!!(3/'owu')); //f
 // console.log((111 > 11 || 45 < 111) ||  !!'0'); //t
-// console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); //f
+// console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); 
 
-// console.log(!!111 == !!11); 
-document.write('не знаю як')
+
 
 // CLASS
 
@@ -336,7 +352,7 @@ document.write('не знаю як')
 // let a7 = (3 % 5);
 // let a8 = (5 + '3');
 // let a9 = ('5' - 3); // чому так?
-document.write('не знаю як')
+// ///////////////////////////////////////////////// не розумію
 // let a10 = (75 + 'кг');
 // console.log(a6);
 // console.log(а7);
@@ -380,9 +396,8 @@ document.write('не знаю як')
 // let name = "Волос Ольга Ігорівна";
 // let age = 33;
 // let hobby = 'прибирати';
-// alert(name);
-// // alert(age);
-// // alert(hobby);
+// alert(name + '\n' + age + '\n' + hobby);
+
 
 
 // 9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
@@ -402,12 +417,12 @@ document.write('не знаю як')
 
 
 // 10. Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
-    // let str = "20";
-    //  let a = 5;
-    //  document.write(str + a + "<br/>");
-    //  document.write(str - a + "<br/>");
-    //  document.write(str * "2" + "<br/>");
-    //  document.write(str / 2 + "<br/>");
+    // let str = "20"; стрінга
+    //  let a = 5; число
+    //  document.write(str + a + "<br/>"); 25
+    //  document.write(str - a + "<br/>"); 15
+    //  document.write(str * "2" + "<br/>"); 40
+    //  document.write(str / 2 + "<br/>"); 10
 
 // 11. Какие значения выведет в окно консоли следующий фрагмент кода если его поместить в console.log?
 //     parseInt("3.14") 3
@@ -430,8 +445,7 @@ document.write('не знаю як')
 // let name = (prompt('Enter your name'));
 // let age = (prompt('Enter your age'));
 // alert('Доброго вечора, ' + name + ', вітаю, вам ' + age);
-
-
+ 
 
 // =====================
 // ======ДОП============
@@ -440,9 +454,9 @@ document.write('не знаю як')
 
 
 
-// 1. Три різних числа вводяться через prompt().
+// 1. Три різних числа вводяться через prompt(). 
 // За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)
-
+// ..............................................все працює, але, думаю, що написано неправильно))
 // let a = parseInt(prompt('Введіть перше число'));
 // let b = parseInt(prompt('Введіть друге число'));
 // let c = parseInt(prompt('Введіть третє число'));
