@@ -330,8 +330,8 @@
 // let i=0;
 //     while (i<block.length) {
 //         if (i%2===1) {  
-//             i++
-//        }  console.log(block[i])
+//         console.log(block[i])    
+//        } i++ 
 //     }
 
 // 4. перебрати циклом for та вивести  числа тільки з непарним індексом
@@ -354,11 +354,10 @@
 // let block = [2,17,13,6,22,31,45,61,6,100,-18]
 // let i = 0
 // while (i<block.length) {
-//     if (block[i]%2 === 0 ) {
-//     i++;    
-//   } 
-// }console.log(block) 
-
+//     if (block[i]%2 === 0) {   
+//    console.log(block[i])
+//     } i++;    
+// } 
 
 // 6. перебрати циклом for та вивести  числа тільки парні  значення
 // let block = [2,17,13,6,22,31,45,61,6,100,-18]
@@ -435,14 +434,31 @@
 //  записать их в другой массив.
 //  5. Вывести каждый елемент массива у которого соседний с права элемент - парный
 //   5 масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. обрахувати середній чек.
+let arr = [100,250,50,168,120,345,188]
+let sum = 0
+let check = 0
+for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i] 
+    check = sum/arr.length
+}console.log(sum)
+console.log(check)
 
 // 3 створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
 // 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
 //  додати його в інший масив.
-let masuv = ['o', 1, true, 'r', 't', 99, 't', false, 'd', 's'];
-let arr = []
-for (let i = 0; i < masuv.length; i++) {
-    if (typeof masuv[i]==='number') {
-        arr.push(masuv[i]);
-    }
-}console.log(arr)
+// let masuv = ['o', 1, true, 'r', 't', 99, 't', false, 'd', 's'];
+// let arr = []
+// for (let i = 0; i < masuv.length; i++) {
+//     if (typeof masuv[i]==='number') {
+//         arr.push(masuv[i]);
+//     }
+// }console.log(arr)
+
+// - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+// let abc = [ 'a', 'b', 'c'];
+// let str ='';
+// let i = 0;
+// while (i<abc.length) {
+//     str = str + abc[i];
+//     i++;
+// } console.log(str);
