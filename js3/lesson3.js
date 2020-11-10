@@ -237,14 +237,14 @@
 // // }
 // // - отримати весь список класів елемента з id=rules і вивести їх в console.log
       let rules = document.getElementById('rules');
-      console.log(rules);
+      console.log(rules.classList);
 
 
 
 
-// // - отримати всі елементи з класом fc_rules
-// // let fc_rules = document.getElementsByClassName('fc_rules');
-// // console.log(fc_rules);
+// - отримати всі елементи з класом fc_rules
+let fc_rules = document.getElementsByClassName('fc_rules');
+console.log(fc_rules);
 
 // // - поміняти колір тексту у всіх елементів fc_rules на червоний (в мене білий)
 // // for (let i = 0; i < fc_rules.length; i++) {
@@ -284,10 +284,10 @@
 // // let listElement2 = document.getElementsByClassName('listElement2');
 // // for (const i of listElement2) {
 
-// // } console.log(listElement2);
+// // } console.log(listElement2.textContent);
 // // або
 // // for (let i = 0; i < listElement2.length; i++) {   
-// // } console.log(listElement2);
+// // } console.log(listElement2.textContent);
 // // -- отримує всі елементи li та змінює ім колір фону на сірий
 // // let liEl = document.getElementsByTagName('li');
 // // for (let i = 0; i < liEl.length; i++) {
