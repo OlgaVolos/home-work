@@ -236,15 +236,15 @@
 // //     ulEl[i].style.color = 'blue';  
 // // }
 // // - отримати весь список класів елемента з id=rules і вивести їх в console.log
-      let rules = document.getElementById('rules');
-      console.log(rules.classList);
+      // let rules = document.getElementById('rules');
+      // console.log(rules.classList);
 
 
 
 
 // - отримати всі елементи з класом fc_rules
-let fc_rules = document.getElementsByClassName('fc_rules');
-console.log(fc_rules);
+// let fc_rules = document.getElementsByClassName('fc_rules');
+// console.log(fc_rules);
 
 // // - поміняти колір тексту у всіх елементів fc_rules на червоний (в мене білий)
 // // for (let i = 0; i < fc_rules.length; i++) {
@@ -313,10 +313,15 @@ console.log(fc_rules);
 //   console.log(a);  
 
 // // -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-// // let a1 = document.getElementsByTagName('a');
-// // for (let i = 0; i < a1.length; i++) {
-// //     a1[i].classList.add('element_XXX');
-// //     a1[i].textContent='XXX'
+// const a1 = document.getElementsByTagName('a');
+// for (const i of a1) {
+//   let XXX = i.innerText;
+//   console.log(XXX);
+//   let classname = `element_${XXX}`;
+//   i.classList.add('classname');    
+// } console.log(a1);
+
+
     
 // // }
 // // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
