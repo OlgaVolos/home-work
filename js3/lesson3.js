@@ -197,11 +197,11 @@
 
 // // -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
 // // // - отримує текст з параграфа з id "content"
-// // const content = document.getElementById("content");
-// // console.log(content);
+// let content = document.getElementById("content");
+// console.log(content.textContent);
 // // - отримує текст з блоку з id "rules"
-// // const rules = document.getElementById("rules");
-// // console.log(rules);
+// let rules = document.getElementById("rules");
+// console.log(rules.textContent);
 
 
 // // - замініть текст параграфа з id 'content' на будь-який інший
@@ -211,16 +211,16 @@
 // // document.getElementById("rules").textContent = 'Мене звати Оля';
 
 // // - змініть кожному елементу колір фону на червоний
-// // const p = document.getElementsByTagName('p');
+// // let p = document.getElementsByTagName('p');
 // // console.log(p);
-// // for (const i = 0; i < p.length; i++) {
+// // for (let i = 0; i < p.length; i++) {
 // //     p[i].style.backgroundColor = 'red';  
 // // };
-// // const divEl = document.getElementsByTagName('div');
+// // let divEl = document.getElementsByTagName('div');
 // // for (let i = 0; i < divEl.length; i++) {
 // //     divEl[i].style.backgroundColor = 'red';   
 // // };
-// // const ulEl = document.getElementsByTagName('ul');
+// // let ulEl = document.getElementsByTagName('ul');
 // // for (let i = 0; i < ulEl.length; i++) {
 // //     ulEl[i].style.backgroundColor = 'red';  
 // // };
@@ -236,11 +236,14 @@
 // //     ulEl[i].style.color = 'blue';  
 // // }
 // // - отримати весь список класів елемента з id=rules і вивести їх в console.log
+      let rules = document.getElementById('rules');
+      console.log(rules);
+
 
 
 
 // // - отримати всі елементи з класом fc_rules
-// // const fc_rules = document.getElementsByClassName('fc_rules');
+// // let fc_rules = document.getElementsByClassName('fc_rules');
 // // console.log(fc_rules);
 
 // // - поміняти колір тексту у всіх елементів fc_rules на червоний (в мене білий)
@@ -260,25 +263,25 @@
 // // Взяти файл template_2.html та працювати в ньому
 // // - Напишіть код, який :
 // // -- змінює колір тексту елемнту з ід main_header на будь-який інший
-// // const main_header = document.getElementById('main_header');
+// // let main_header = document.getElementById('main_header');
 // // main_header.style.color = 'green';
 // // console.log(main_header);
 
 // // // -- робить шириниу елементу ul 400 пікселів
-// // const newUl = document.getElementsByTagName('ul');
+// // let newUl = document.getElementsByTagName('ul');
 // // for (let i = 0; i < newUl.length; i++) {
 // //     newUl[i].style.width = '400px';
 // // };
 // // console.log(newUl);
 // // // -- робить шириниу всіх елементів з класом linkList шириною 50%
-// // const linkClass = document.getElementsByClassName('linkList');
+// // let linkClass = document.getElementsByClassName('linkList');
 // // for (let i = 0; i < linkClass.length; i++) {
 // //     linkClass[i].style.width = '50%'; 
 // // }
 // // console.log(linkClass);
 
 // // -- отримує текст який зберігається в елементі з класом listElement2
-// // const listElement2 = document.getElementsByClassName('listElement2');
+// // let listElement2 = document.getElementsByClassName('listElement2');
 // // for (const i of listElement2) {
 
 // // } console.log(listElement2);
@@ -286,13 +289,13 @@
 // // for (let i = 0; i < listElement2.length; i++) {   
 // // } console.log(listElement2);
 // // -- отримує всі елементи li та змінює ім колір фону на сірий
-// // const liEl = document.getElementsByTagName('li');
+// // let liEl = document.getElementsByTagName('li');
 // // for (let i = 0; i < liEl.length; i++) {
 // //     liEl[i].style.backgroundColor = 'gray';
     
 // // } console.log(liEl);
 // // -- отримує всі елементи 'a' та додає їм клас anchor
-// // const anchor = document.getElementsByTagName('a');
+// // let anchor = document.getElementsByTagName('a');
 // // for (let i = 0; i < anchor.length; i++) {
 // //   anchor[i].classList.add('anchor') 
 // // }
@@ -300,7 +303,7 @@
 
 
 // // -- отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
-// const a = document.getElementsByTagName('a');
+// let a = document.getElementsByTagName('a');
 // for (let i = 0; i < a.length; i++) {
 //    if(a[i].textContent==='link3') {
 //        a[i].style.fontSize = '40px';
@@ -310,14 +313,14 @@
 //   console.log(a);  
 
 // // -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-// // const a1 = document.getElementsByTagName('a');
+// // let a1 = document.getElementsByTagName('a');
 // // for (let i = 0; i < a1.length; i++) {
 // //     a1[i].classList.add('element_XXX');
 // //     a1[i].textContent='XXX'
     
 // // }
 // // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-// // const sub = document.getElementsByClassName('sub-header');
+// // let sub = document.getElementsByClassName('sub-header');
 // // for (let i = 0; i < sub.length; i++) {
 // //     sub[i].style.backgroundColor = prompt('Введіть колір фону'); 
 // //     if (sub[i].textContent === 'content 2 segment') {
@@ -327,18 +330,18 @@
 
 // // -- отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
 // // -- отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
-// // const content_1 = document.getElementsByClassName('content_1');
+// // let content_1 = document.getElementsByClassName('content_1');
 // // for (let i = 0; i < content_1.length; i++) {
 // //     content_1[i].textContent = prompt('Введіть довільний текст')    
 // // }
 // // -- отримати елементи p та змінити їм paddin на довільне значення
-// // const pp = document.getElementsByTagName('p');
+// // let pp = document.getElementsByTagName('p');
 // // for (let i = 0; i < pp.length; i++) {
 // //  pp[i].style.padding = '20px';
     
 // // }console.log(pp);
 // // -- отримати елементи з класом text2 та змінити їм текст на довільне значення
-// const text2 = document.getElementsByClassName('text2');
+// let text2 = document.getElementsByClassName('text2');
 // for (let i = 0; i < text2.length; i++) {
 //     text2[i].textContent = 'довільне значення))'
     
