@@ -743,12 +743,12 @@ div.id = 'wrap';
 for (let i = 0; i < rules.length; i++) {
     const rule = rules[i];
     const div1 = document.createElement('div');
-    const divNumber = document.createElement('div');
-    const divText = document.createElement('div');
-    divNumber.innerText = rule.title;
-    divText.innerText = rule.body;
-    div1.appendChild(divNumber);
-    div1.appendChild(divText);
+    const Number = document.createElement('h3');
+    const Text = document.createElement('p');
+    Number.innerText = rule.title;
+    Text.innerText = rule.body;
+    div1.appendChild(Number);
+    div1.appendChild(Text);
     div.appendChild(div1)
 
 } 
