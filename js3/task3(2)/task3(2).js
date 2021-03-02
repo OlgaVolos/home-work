@@ -1,4 +1,4 @@
-//1 - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
+// //1 - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
 // const apple = {
 //     color: 'red',
 //     sort: 'Antonivka',
@@ -26,7 +26,10 @@
 // };
 
 
-// //2 - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
+// //2 - создать 5 объектов с полностью разным набором полей.
+// В каждом объекте должен присутсвовать массив и внутренний объект.
+// Опишите что угодно, машину, картину, болт...
+// Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
 // const me = {
 //     name: 'Olja',
 //     child: ['Uliana', 10],
@@ -52,62 +55,64 @@
 //     color: ['white', 'black'],
 //     description: {material: 'wood', form: 'square' }
 // }
-
-
-// 3- При помощи for in вывести все ключи всех объектов из задания 1 и 2
+//
+//
+// // 3- При помощи for in вывести все ключи всех объектов из задания 1 и 2
 // for (const key in apple) {
 //     if (apple.hasOwnProperty(key)) {
-
+//
 //     } console.log(key);
 // };
+//
+//
 // for (const key in cat) {
 //     if (cat.hasOwnProperty(key)) {
-             
+//
 //     }console.log(key);
 // };
 // for (const key in phone) {
 //     if (phone.hasOwnProperty(key)) {
-        
+//
 //     } console.log(key);
 // }
-
+//
 // for (const i in dog) {
-//     if (dog.hasOwnProperty(i)) {  
+//     if (dog.hasOwnProperty(i)) {
 //     } console.log(i);
-// } 
-
+// }
+//
 // for (const i in house) {
 //     if (house.hasOwnProperty(i)) {
-     
+//
 //     }console.log(i);
-// } 
-
+// }
+//
 // for (const i in me) {
-//     if (me.hasOwnProperty(i)) {     
+//     if (me.hasOwnProperty(i)) {
 //     }console.log(i);
-// }  
-
+// }
+//
 // for (const i in Uliana) {
-//     if (Uliana.hasOwnProperty(i)) {        
+//     if (Uliana.hasOwnProperty(i)) {
 //     }console.log(i);
-// } 
-
+// }
+//
 // for (const i in dacha) {
 //     if (dacha.hasOwnProperty(i)) {
-    
+//
 //     }console.log(i);
-// } 
-
+// }
+//
 // for (const i in leptop) {
 //     if (leptop.hasOwnProperty(i)) {
-       
+//
 //     }console.log(i);
-// } 
-
+// }
+//
 // for (const i in table) {
 //     if (table.hasOwnProperty(i)) {
 //     } console.log(i);
-// } 
+// }
 //4 - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2
 
 // let a = Object.keys(apple);
@@ -139,130 +144,131 @@
 // let k = Object.keys(table);
 // console.log(k);
 // 5- Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
-const car = [
-    { 
-        model: 'BMW',
-        year: 2005,
-        power: 1500,
-        color: 'red' 
-    },
-    {
-        model: 'Opel',
-        year: 2018,
-        power: 2500,
-        color: 'silver'  
-    },
-    {
-        model: 'Mersedes-Benz',
-        year: 2014,
-        power: 3000,
-        color: 'white' 
-    },
-    {
-        model: 'VW',
-        year: 2019,
-        power: 1800,
-        color: 'green' 
-    },
-    {
-        model: 'Volvo',
-        year: 2003,
-        power: 1200,
-        color: 'red' 
-    },
-    {
-        model: 'Waz',
-        year: 1981,
-        power: 1000,
-        color: 'yellow' 
-    },
-    {
-        model: 'xxx',
-        year: 2010,
-        power: 4500,
-        color: 'blue' 
-    },
-    {
-        model: 'aaa',
-        year: 2020,
-        power: 1500,
-        color: 'white' 
-    },
-    {
-        model: 'rrr',
-        year: 2002,
-        power: 1550,
-        color: 'grey' 
-    },
-    {
-        model: 'rye',
-        year: 1999,
-        power: 1900,
-        color: 'orange' 
-    }
-];
+// const car = [
+//     {
+//         model: 'BMW',
+//         year: 2005,
+//         power: 1500,
+//         color: 'red'
+//     },
+//     {
+//         model: 'Opel',
+//         year: 2018,
+//         power: 2500,
+//         color: 'silver'
+//     },
+//     {
+//         model: 'Mersedes-Benz',
+//         year: 2014,
+//         power: 3000,
+//         color: 'white'
+//     },
+//     {
+//         model: 'VW',
+//         year: 2019,
+//         power: 1800,
+//         color: 'green'
+//     },
+//     {
+//         model: 'Volvo',
+//         year: 2003,
+//         power: 1200,
+//         color: 'red'
+//     },
+//     {
+//         model: 'Waz',
+//         year: 1981,
+//         power: 1000,
+//         color: 'yellow'
+//     },
+//     {
+//         model: 'xxx',
+//         year: 2010,
+//         power: 4500,
+//         color: 'blue'
+//     },
+//     {
+//         model: 'aaa',
+//         year: 2020,
+//         power: 1500,
+//         color: 'white'
+//     },
+//     {
+//         model: 'rrr',
+//         year: 2002,
+//         power: 1550,
+//         color: 'grey'
+//     },
+//     {
+//         model: 'rye',
+//         year: 1999,
+//         power: 1900,
+//         color: 'orange'
+//     }
+// ];
 // console.log(car);
-// 6- Создать массив объектов cities и заполнить его объектами с полями название, популяция, страна, регион. (Значаения полей могу быть выдуманными)
-const cities = [
-    {
-        title: 'Lviv',
-        population: 100500,
-        country: 'Ukraine',
-        region: 'Lviv Oblast'
-    },
-    {
-        title: 'Kyiv',
-        population: 250250,
-        country: 'Ukraine',
-        region: 'Kyiv Oblast' 
-    },
-    {
-        title: 'Rivne',
-        population: 89000,
-        country: 'Ukraine',
-        region: 'Rivne Oblast'
-    }
-];
+// 6- Создать массив объектов cities и заполнить его объектами с полями название,
+// популяция, страна, регион. (Значаения полей могу быть выдуманными)
+// const cities = [
+//     {
+//         title: 'Lviv',
+//         population: 100500,
+//         country: 'Ukraine',
+//         region: 'Lviv Oblast'
+//     },
+//     {
+//         title: 'Kyiv',
+//         population: 250250,
+//         country: 'Ukraine',
+//         region: 'Kyiv Oblast'
+//     },
+//     {
+//         title: 'Rivne',
+//         population: 89000,
+//         country: 'Ukraine',
+//         region: 'Rivne Oblast'
+//     }
+// ];
 // console.log(cities);
 //7 - Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. 
-const cars = [
-    {
-        model: 'BMW',
-        year: 2005,
-        power: 1500,
-        color: 'red',
-        driver: {
-            name: 'Svin',
-            age: 18,
-            gender: 'male',
-            experience: 0
-        }
-    },
-    {
-        model: 'Volvo',
-        year: 2003,
-        power: 1200,
-        color: 'red',
-        driver: {
-            name: 'Olja',
-            age: 25,
-            gender: 'female',
-            experience: 5
-        }
-    },
-    {
-        model: 'rrr',
-        year: 2002,
-        power: 1550,
-        color: 'grey',
-        driver: {
-            name: 'Dima',
-            age: 35,
-            gender: 'male',
-            experience: 15
-        }
-    }
-];
+// const cars = [
+//     {
+//         model: 'BMW',
+//         year: 2005,
+//         power: 1500,
+//         color: 'red',
+//         driver: {
+//             name: 'Svin',
+//             age: 18,
+//             gender: 'male',
+//             experience: 0
+//         }
+//     },
+//     {
+//         model: 'Volvo',
+//         year: 2003,
+//         power: 1200,
+//         color: 'red',
+//         driver: {
+//             name: 'Olja',
+//             age: 25,
+//             gender: 'female',
+//             experience: 5
+//         }
+//     },
+//     {
+//         model: 'rrr',
+//         year: 2002,
+//         power: 1550,
+//         color: 'grey',
+//         driver: {
+//             name: 'Dima',
+//             age: 35,
+//             gender: 'male',
+//             experience: 15
+//         }
+//     }
+// ];
 // console.log(cars);
 // Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
 
@@ -273,13 +279,13 @@ const cars = [
 //   i++;  
 // };
 // console.log('*********************');
-// i=0;
+//let i=0;
 // while (i<cities.length) {
     // console.log(cities[i]);
 //     i++;
 // };
 // console.log('*********************');
-// i=0
+// let i=0;
 // while (i<cars.length) {
 //     console.log(cars[i]);
 //    i++;  
@@ -346,7 +352,9 @@ const cars = [
 // console.log(newArr);
 // ;
 
-//16 - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
+//16 - Создать массив пользователей.
+// У каждого пользователя обязательно должено быть поле skills которое является массивом.
+// Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
 // const users = [
 //     { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } },
 //     { name: 'ananas', skills : ['java','js', 'css']  },
@@ -357,35 +365,41 @@ const cars = [
 // for (const i of users) {
 //     console.log(i.name);
 //     for (const j of i.skills) {
-//         console.log(j);   
+//         console.log(j);
+        // console.log(`${i.name} - ${j}`)
 //     }
 // }
-//17 - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
+//17 - Создать массив пользователей.
+// У каждого пользователя обязательно должено быть поле skills которое является массивом.
+// Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills.
+// Скопировать все skills всех пользователей в отедльный массив
 // const skillArr = [];
 // for (const i of users) {
 //     console.log(i.name);
 //     for (const j of i.skills) {
 //         skillArr.push(j);
-//     }   
+//     }
 // } console.log(skillArr);
 
 //18 - За допомогою 2х циклів циклів проітеррувати  даний масив і масив кожного об'єкта.
-//  let users = [
-//      {name: 'vasya', age: 31, status: false, skills: ['java', 'js']}, 
-//      {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']},
-//      {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']}, 
-//      {name: 'olya', age: 28, status: false, skills: ['java', 'js']}, 
-//      {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
-
-//  for (const i of users) {
-//      console.log('name: ', i.name);
-//      for (const j of i.skills) {
-//          console.log(j);   
-//      }   
-//  };
+ let users = [
+     {name: 'vasya', age: 31, status: false, skills: ['java', 'js']},
+     {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']},
+     {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']},
+     {name: 'olya', age: 28, status: false, skills: ['java', 'js']},
+     {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
 
 
-//19 - З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
+ for (const i of users) {
+     console.log('name: ', i.name);
+     for (const j of i.skills) {
+         console.log(j);
+     }
+ };
+
+
+//19 - З масиву users за допомогою циклу витягнути адреси користувачів і
+// записати (скопіювати) їх в інший порожній масив.
 // let users = [{
 //                 				name: 'vasya',
 //                 				age: 31,
@@ -449,7 +463,8 @@ const cars = [
 // };
 // console.log(newArr);
 
-//20 - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
+//20 - За допомоги циклу проітерувати  масив users, записати кожного юзера
+// в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
 
 // for (let i = 0; i < users.length; i++) {
 //     let divka = document.createElement('div');
@@ -699,9 +714,12 @@ const cars = [
     
 // Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
 
-// -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
-// При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
-// Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
+// -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив,
+// та робить з кожне правило в окремому блоці.
+// При цому в блоці, номер правила записати в свій блок,
+// текст правила записати в свій окремий блок.
+// Результатом відпрацювання скріпта повинна бути структура
+// яка міститься в блоці wrap файла rule.html
 
 			let rules = [
 				{
@@ -761,6 +779,7 @@ document.body.appendChild(div)
 
 
 // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
-// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.usercreateElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
 // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
 // ****** при помощи fetch (как в примере) получить от jsonplaceholder все posts. Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments. Объеденить соответсвующий post с соответсвующими comment и вывести в браузер. Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
+

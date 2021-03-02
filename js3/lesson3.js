@@ -66,13 +66,13 @@
 // // - будинок
 // // const house = {
 // //     address: {
-// //         street: 'Shevchenk',
-// //         numer: 27
+// //         street: 'Shevchenko',
+// //         number: 27
 // //     },
 // //     flat: 10,
 // //     room: [ 
 // //         'kitchen',
-// //         'badroom',
+// //         'bedroom',
 // //         'bathroom'
 // //     ],
 // //     material: {
@@ -151,20 +151,21 @@
 
 
 // // // Дан массив:
-// // const users = [
-// // 				{name: 'vasya', age: 31, status: false},
-// // 				{name: 'petya', age: 30, status: true},
-// // 				{name: 'kolya', age: 29, status: true},
-// // 				{name: 'olya', age: 28, status: false},
-// // 				{name: 'max', age: 30, status: true},
-// // 				{name: 'anya', age: 31, status: false},
-// // 				{name: 'oleg', age: 28, status: false},
-// // 				{name: 'andrey', age: 29, status: true},
-// // 				{name: 'masha', age: 30, status: true},
-// // 				{name: 'olya', age: 31, status: false},
-// // 				{name: 'max', age: 31, status: true}
-// // 			];
-// // // - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і вивести в консольх наступне
+// const users = [
+// 				{name: 'vasya', age: 31, status: false},
+// 				{name: 'petya', age: 30, status: true},
+// 				{name: 'kolya', age: 29, status: true},
+// 				{name: 'olya', age: 28, status: false},
+// 				{name: 'max', age: 30, status: true},
+// 				{name: 'anya', age: 31, status: false},
+// 				{name: 'oleg', age: 28, status: false},
+// 				{name: 'andrey', age: 29, status: true},
+// 				{name: 'masha', age: 30, status: true},
+// 				{name: 'olya', age: 31, status: false},
+// 				{name: 'max', age: 31, status: true}
+// 			];
+// // // - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і
+// вивести в консольх наступне
 // // // - статус Андрія
 // // console.log(users[7].status);
 
@@ -195,10 +196,12 @@
 
 // // -Візьміть файл template1.html, підключіть до нього скрипт, і працюйте в ньому.
 
-// // -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
+// // -- Напишіть код,  який за допомоги document.getElementById або
+// document.getElementsByClassName або document.getElementsByTagName :
 // // // - отримує текст з параграфа з id "content"
 // let content = document.getElementById("content");
 // console.log(content.textContent);
+
 // // - отримує текст з блоку з id "rules"
 // let rules = document.getElementById("rules");
 // console.log(rules.textContent);
@@ -351,3 +354,4 @@
 //     text2[i].textContent = 'довільне значення))'
     
 // }
+
