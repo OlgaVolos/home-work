@@ -281,7 +281,7 @@
 // console.log('*********************');
 //let i=0;
 // while (i<cities.length) {
-    // console.log(cities[i]);
+// console.log(cities[i]);
 //     i++;
 // };
 // console.log('*********************');
@@ -315,7 +315,7 @@
 //     console.log(i); 
 // };
 
- 
+
 //11 - взять объекты из задания 1 и превратить каждый в json.
 // let appleJ = JSON.stringify(apple);
 // console.log(appleJ);
@@ -366,7 +366,7 @@
 //     console.log(i.name);
 //     for (const j of i.skills) {
 //         console.log(j);
-        // console.log(`${i.name} - ${j}`)
+// console.log(`${i.name} - ${j}`)
 //     }
 // }
 //17 - Создать массив пользователей.
@@ -382,20 +382,20 @@
 // } console.log(skillArr);
 
 //18 - За допомогою 2х циклів циклів проітеррувати  даний масив і масив кожного об'єкта.
- let users = [
-     {name: 'vasya', age: 31, status: false, skills: ['java', 'js']},
-     {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']},
-     {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']},
-     {name: 'olya', age: 28, status: false, skills: ['java', 'js']},
-     {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
-
-
- for (const i of users) {
-     console.log('name: ', i.name);
-     for (const j of i.skills) {
-         console.log(j);
-     }
- };
+//  let users = [
+//      {name: 'vasya', age: 31, status: false, skills: ['java', 'js']},
+//      {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']},
+//      {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']},
+//      {name: 'olya', age: 28, status: false, skills: ['java', 'js']},
+//      {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+//
+//
+//  for (const i of users) {
+//      console.log('name: ', i.name);
+//      for (const j of i.skills) {
+//          console.log(j);
+//      }
+//  };
 
 
 //19 - З масиву users за допомогою циклу витягнути адреси користувачів і
@@ -456,7 +456,7 @@
 //                 				status: true,
 //                 				address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
 //                 			}];
-    
+
 //  newArr = [];
 // for (const i of users) {
 //     newArr.push(i.address)
@@ -476,9 +476,6 @@
 //         divka.innerText = (`${user.name}, ${user.age}, ${user.status}, ${address} `)
 //         document.body.appendChild(divka);
 //     }
-
-     
-
 
 
 //21 - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
@@ -505,7 +502,7 @@
 //      document.body.appendChild(div);
 //     } 
 
-    
+
 //22 - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 // for (let i = 0; i < users.length; i++) {
 //     const element = users[i];
@@ -540,7 +537,7 @@
 //             {id: 2, name: 'petya', age: 30, status: true}, 
 //             {id: 3, name: 'kolya', age: 29, status: true}, 
 //             {id: 4, name: 'olya', age: 28, status: false},];
-            
+
 //             let citiesWithId = [
 //                 {user_id: 3, country: 'USA', city: 'Portland'}, 
 //                 {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, 
@@ -563,9 +560,6 @@
 // let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
 
 
-
-
-
 // - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
 // const div = document.createElement('div');
 // div.innerText = 'Text';
@@ -577,10 +571,10 @@
 // let bbb = document.getElementsByClassName('class');
 // for (const element of b) {
 //     console.log(element.textContent);
-    
+
 // }
 // for (let i = 0; i < bbb.length; i++) {
-    
+
 //     console.log(bbb[i].textContent);
 // }
 // let ccc = document.getElementsByTagName('div');
@@ -595,7 +589,7 @@
 // a.innerText = "Привіт";
 // for (const element of bbb) {
 //     element.innerText = 'Хелоу';
-    
+
 // }
 // for (const elem of ccc) {
 //     elem.innerText = "hello"
@@ -608,7 +602,7 @@
 //     element.style.width = '60px';
 //     element.style.height = '60px';
 
-    
+
 // }
 // for (const elem of ccc) {
 //     elem.style.width = "65px";
@@ -680,19 +674,19 @@
 //     if(el.getAttribute('id')){
 //         console.log(el);
 //     }
-    
+
 // }
 // //  - знайти всі параграфи ,та змінити текст на hello oktenweb!
 // const p = document.getElementsByTagName('p');
 // for (const elem of p) {
 //     elem.innerText = 'hello oktenweb!'
-    
+
 // }
 // //  - знайти всі div та змінити ім колір на червоний
 // const div = document.getElementsByTagName('div');
 // for (const elem of div) {
 //     elem.style.backgroundColor = 'red';
-    
+
 // }
 
 // ============
@@ -711,7 +705,7 @@
 // }
 // content.appendChild(ul);
 
-    
+
 // Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
 
 // -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив,
@@ -721,65 +715,174 @@
 // Результатом відпрацювання скріпта повинна бути структура
 // яка міститься в блоці wrap файла rule.html
 
-			let rules = [
-				{
-					title: 'Первое правило Бойцовского клуба.',
-					body: 'Никому не рассказывать о Бойцовском клубе.'
-				},
-				{
-					title: 'Второе правило Бойцовского клуба.',
-					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-				},
-				{
-					title: 'Третье правило Бойцовского клуба.',
-					body: 'В схватке участвуют только двое.'
-				},
-				{
-					title: 'Четвертое правило Бойцовского клуба.',
-					body: 'Не более одного поединка за один раз.'
-				},
-				{
-					title: 'Пятое правило Бойцовского клуба.',
-					body: 'Бойцы сражаются без обуви и голые по пояс.'
-				},
-				{
-					title: 'Шестое правило Бойцовского клуба.',
-					body: 'Поединок продолжается столько, сколько потребуется.'
-				},
-				{
-					title: 'Седьмое правило Бойцовского клуба.',
-					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-				},
-				{
-					title: 'Восьмое и последнее правило Бойцовского клуба.',
-					body: 'Новичок обязан принять бой.'
-				},
-
-			];
-const div = document.createElement('div');
-div.id = 'wrap';
-for (let i = 0; i < rules.length; i++) {
-    const rule = rules[i];
-    const div1 = document.createElement('div');
-    const Number = document.createElement('h3');
-    const Text = document.createElement('p');
-    Number.innerText = rule.title;
-    Text.innerText = rule.body;
-    div1.appendChild(Number);
-    div1.appendChild(Text);
-    div.appendChild(div1)
-
-} 
-
-
-document.body.appendChild(div)
-
-
-
+// 			let rules = [
+// 				{
+// 					title: 'Первое правило Бойцовского клуба.',
+// 					body: 'Никому не рассказывать о Бойцовском клубе.'
+// 				},
+// 				{
+// 					title: 'Второе правило Бойцовского клуба.',
+// 					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+// 				},
+// 				{
+// 					title: 'Третье правило Бойцовского клуба.',
+// 					body: 'В схватке участвуют только двое.'
+// 				},
+// 				{
+// 					title: 'Четвертое правило Бойцовского клуба.',
+// 					body: 'Не более одного поединка за один раз.'
+// 				},
+// 				{
+// 					title: 'Пятое правило Бойцовского клуба.',
+// 					body: 'Бойцы сражаются без обуви и голые по пояс.'
+// 				},
+// 				{
+// 					title: 'Шестое правило Бойцовского клуба.',
+// 					body: 'Поединок продолжается столько, сколько потребуется.'
+// 				},
+// 				{
+// 					title: 'Седьмое правило Бойцовского клуба.',
+// 					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+// 				},
+// 				{
+// 					title: 'Восьмое и последнее правило Бойцовского клуба.',
+// 					body: 'Новичок обязан принять бой.'
+// 				},
+//
+// 			];
+// const div = document.createElement('div');
+// div.id = 'wrap';
+// for (let i = 0; i < rules.length; i++) {
+//     const rule = rules[i];
+//     const div1 = document.createElement('div');
+//     const Number = document.createElement('h3');
+//     const Text = document.createElement('p');
+//     Number.innerText = rule.title;
+//     Text.innerText = rule.body;
+//     div1.appendChild(Number);
+//     div1.appendChild(Text);
+//     div.appendChild(div1)
+//
+// }
+//
+//
+// document.body.appendChild(div)
 
 
 // *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі users. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт в свій блок (блок в блоці).
-// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts. За допомогою document.usercreateElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
-// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments. За допомогою document.createElement вивести їх в браузер. Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
-// ****** при помощи fetch (как в примере) получить от jsonplaceholder все posts. Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments. Объеденить соответсвующий post с соответсвующими comment и вывести в браузер. Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
+// fetch('https://jsonplaceholder.typicode.com/users')
+// 	.then(response => response.json())
+// 	.then(users => {
+//         for (const user of users) {
+//             // const elements = [];
+//             let userDiv = document.createElement('div')
+//             let userId = document.createElement('h2');
+//             let userName = document.createElement('h3');
+//             let userEmail = document.createElement('p');
+//
+//             userId.innerText = user.id;
+//             console.log(user.id);
+//             userName.innerText = user.name;
+//             userEmail.innerText = user.email;
+//             userDiv.appendChild(userId);
+//             userDiv.appendChild(userName);
+//             userDiv.appendChild(userEmail);
+//             document.body.appendChild(userDiv)
+//             // elements.push(userDiv)
+//     }
+//     })
+// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі posts.
+// За допомогою document.usercreateElement вивести їх в браузер.
+// Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then(response => response.json())
+//     .then(posts => {
+//         for (const post of posts) {
+//             let postDiv = document.createElement('div');
+//             let postId = document.createElement('h1');
+//             let postBody = document.createElement('h3');
+//             let postTitle = document.createElement('p');
+//
+//             postId.innerHTML = post.id;
+//             postBody.innerHTML = post.body;
+//             postTitle.innerHTML = post.title;
+//
+//             postDiv.appendChild(postId);
+//             postDiv.appendChild(postBody);
+//             postDiv.appendChild(postTitle);
+//             document.body.appendChild(postDiv);
+//         }
+//     });
 
+
+// *** за допомогою fetch (як в прикладі) отримати від jsonplaceholder всі comments.
+// За допомогою document.createElement вивести їх в браузер.
+// Помістити кожен окремий об'єкт в блок, при цьому кожен внутрішній об'єкт(якщо він існує) в свій блок (блок в блоці).
+// fetch('https://jsonplaceholder.typicode.com/comments')
+//     .then(response => response.json())
+//     .then(comments => {
+//         for (const comment of comments) {
+//             let commentDiv = document.createElement('div');
+//             let commentId = document.createElement('p');
+//             let commentBody = document.createElement('h3');
+//             let commentName = document.createElement('h4');
+//
+//             commentId.innerText = comment.id;
+//             commentBody.innerText = comment.body;
+//             commentName.innerText = comment.name;
+//
+//             commentDiv.appendChild(commentId);
+//             commentDiv.appendChild(commentBody);
+//             commentDiv.appendChild(commentName);
+//             document.body.appendChild(commentDiv);
+//
+//
+//
+//         }console.log(comments)
+//     })
+
+// ****** при помощи fetch (как в примере) получить от jsonplaceholder все posts.
+// Внутри последнего then() сделать еще один fetch который сделает запрос и получит все comments.
+// Объеденить соответсвующий post с соответсвующими comment и вывести в браузер.
+// Подсказка : в каждом comment есть поле postId которое определяет какой комментарий принадлежит какому посту
+
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then(response => response.json())
+//     .then(posts => {
+//         for (const post of posts) {
+//             post.comments = [];
+//             fetch('https://jsonplaceholder.typicode.com/comments')
+//                 .then(response => response.json())
+//                 .then(comments => {
+//                     for (const comment of comments) {
+//                         if (post.id === comment.postId){
+//                             post.comments.push(comment)
+//                         }
+//                     }
+//                     let postDiv = document.createElement('div');
+//                     let postId = document.createElement('h3')
+//                     postId.innerText = `${post.id}-${post.title}`;
+//
+//                     let postUl = document.createElement('ul');
+//                     for (const comment of post.comments) {
+//                         let postLi = document.createElement('li')
+//                         postLi.innerText = `${comment.body}`
+//                         postUl.appendChild(postLi);
+//                     }
+//
+//                     postDiv.appendChild(postId);
+//                     postDiv.appendChild(postUl);
+//                     document.body.appendChild(postDiv);
+//
+//
+//
+//
+//                 })
+//
+//
+//
+//         }
+//         console.log(posts);
+//     })
+
+//
