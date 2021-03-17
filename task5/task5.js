@@ -151,13 +151,13 @@
 //         this.attrs = attrs;
 // }
 //     }
-
+//
 //     let tittleA = '<a>';
 //     let describeA = 'Тег <a> является одним из важных элементов HTML и предназначен для создания ссылок. В зависимости от присутствия атрибутов name или href тег <a> устанавливает ссылку или якорь. Якорем называется закладка внутри страницы, которую можно указать в качестве цели ссылки. При использовании ссылки, которая указывает на якорь, происходит переход к закладке внутри веб-страницы.';
 //     let attributesA = [
 //         {titleOfAttr: 'href', actionOfAttr: 'Задает адрес документа, на который следует перейти.' },
 //         {titleOfAttr: 'accesskey', actionOfAttr: 'Переход к области с помощью комбинации клавиш' }
-    
+//
 //     ]
 //     let a = new Tag(tittleA, describeA, attributesA);
 //     console.log(a);
@@ -392,6 +392,7 @@
 // };
 
 // let boy = new Prince('Yura', 38, 36);
+//
 // for (const girl of princess) {
 //     if(girl.size === boy.shoes){
 //         console.log(`${boy.name} + ${girl.name}`);
@@ -409,13 +410,13 @@
 // --Сторити об'єкт типу "принц" за допомоги функції конструктора з полями ім'я, вік, туфелька яку він знайшов, та функцію "пошук попелюшки"
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
 // ==============================================
-
+//
 // function Cinderella(name, age, size){
 //     this.name = name;
 //     this.age = age;
 //     this.size = size;
 // };
-
+//
 // let girl1 = new Cinderella ('Olja', 33, 39);
 // let girl2 = new Cinderella ('Yulia', 32, 38);
 // let girl3 = new Cinderella ('Katja', 31, 37);
@@ -426,25 +427,46 @@
 // let girl8 = new Cinderella ('Ulia', 26, 36);
 // let girl9 = new Cinderella ('Svitlana', 25, 37);
 // let girl10 = new Cinderella ('Oksana', 24, 38);
-
+//
 // const princess = [girl1, girl2, girl3, girl4, girl5, girl6, girl7, girl8, girl9, girl10];
-
-
-// function Prince(name, age, shoes) {
+//
+//
+// function Prince (name, age, tuflja){
 //     this.name = name;
 //     this.age = age;
-//     this.shoes = shoes;
-//     this.findCinderella = function(girls){
+//     this.tuflia = tuflja;
+//     this.findCinderella = function (girls){
 //         for (const girl of girls) {
-//                 if(girl.size === this.shoes){
-//                     console.log(`${this.name} + ${girl.name}`);
-//                     break;
-//             }        
-    
+//             if (girl.size === this.tuflia){
+//                 console.log(`${this.name} + ${girl.name}`);
+//                 break;
+//             }
 //         }
-//     }    
-// };
-
-// const boy = new Prince('Max', 34, 39);
-
+//     }
+// }
+//
+// const boy = new Prince("Oleg", 32, 35);
+//
 // boy.findCinderella(princess);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
