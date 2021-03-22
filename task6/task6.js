@@ -1,291 +1,361 @@
+
 // - создать массив с 20 числами.
-// const number = [30,3,1234,45,54,587,10,56,78,145,982,12,2,20,78,1564,32,1,42,78]
-// -- при помощи метода sort и колбека  отсортировать массив.
 
-// let sortNumber = number.sort(function(a,b){
-//      return a-b;
-//  });
-//  console.log(sortNumber);
-
-
-// -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.
-// sortNumber = number.sort(function(a,b){
-//     return b-a;
+// const numberArray = [4,45,56,156,12,2,5,4,2,3,45,12,15,45,12,78,65,545,5454,55]
+// console.log(numberArray);
+// // -- при помощи метода sort и колбека  отсортировать массив.
+//
+// let sortArr = numberArray.sort(function (a, b){
+//     return a-b
+//
+// })
+// console.log(sortArr);
+// // -- при помощи метода sort и колбека отсортировать массив в ниспадающем напралении.
+//
+// sortArr = numberArray.sort(function (a,b){
+//     return b-a
 // });
-// console.log(sortNumber); 
-
-// -- при помощи filter получить числа кратные 3
-// sortNumber = number.filter(function(value){
-//     return value%3===0;
-
-// });
-// console.log(sortNumber);
-// -- при помощи filter получить числа кратные 10
-// sortNumber = number.filter(function(value){
+// console.log(sortArr);
+//
+// // -- при помощи filter получить числа кратные 3
+//
+// sortArr = numberArray.filter(function (value){
+//     return value%3===0
+// })
+// console.log(sortArr);
+//
+// // -- при помощи filter получить числа кратные 10
+//
+// sortArr = numberArray.filter(function (value){
 //     return value%10===0;
-// })
-// console.log(sortNumber);
-// -- перебрать (проитерировать) массив при помощи foreach()
-// sortNumber = number.forEach((value, index) => console.log(value, index));
-  
-// -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
-// sortNumber = number.map((value) => {
-//     value = value*3;
-//     return value
 // });
-// console.log(sortNumber);
+// console.log(sortArr);
+//
+// // -- перебрать (проитерировать) массив при помощи foreach()
+//
+// sortArr = numberArray.forEach((value, index) => console.log(value, index));
+//
+// // -- перебрать массив при помощи map() и получить новый массив в котором все значения будут в 3 раза больше
+//
+// sortArr = numberArray.map(value => value*3);
+// const newArray = [];
+// newArray.push(sortArr)
+// console.log(newArray);
 
-// console.log(number);
-// ********************************************
-// чому не відбулася мутація масиву???
-// ********************************************
-
+//
 // - создать массив со словами на 15-20 элементов.
-// const words = ['dog', 'cat', 'driver', 'laptop', 'phone', 'book', 'table', 'potato', 'ananas', 'cheese', 'window', 'printer', 'tomato', 'mouse', 'humster'];
+
+// const wordsArray = ['lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consectetur', 'adipisicing', 'elit', 'ad', 'consequatur', 'culpa', 'nemo', 'odio',
+//     'perspiciatis', 'sunt', 'vel', 'veniam', 'iure', 'labore', 'magnam']
 // // -- отсортировать его по алфавиту в восходящем порядке.
-// let sortWords = words.sort((a, b) => {
-// if (a>b){
-//     return 1
-// }
-// return - 1
-// }); 
-// console.log(sortWords);
-
-// // -- отсортировать его по алфавиту  в нисходящем порядке.
-// sortWords = words.sort((a,b) => {
+//
+// let sortWordsArr = wordsArray.sort(function (a,b){
 //     if(a>b){
-//         return -1;
+//         return 1;
 //     }
-//     return 1
+//     return -1
 // });
-// console.log(sortWords);
-// // -- отфильтровать слова длиной менее 4х символов
-// sortWords = words.filter(value => value.length<4);
-// console.log(sortWords);
-
-// sortWords = words.filter(value => {
-//     return value.length<6
+// console.log(sortWordsArr);
+//
+// // -- отсортировать его по алфавиту  в нисходящем порядке.
+//
+// sortWordsArr = wordsArray.sort(function (a,b){
+//     if(b>a){
+//         return 1;
+//     }
+//     return -1;
 // })
-// console.log(sortWords);
-
+// console.log(sortWordsArr);
+//
+// // -- отфильтровать слова длиной менее 4х символов
+//
+// sortWordsArr = wordsArray.filter(value => value.length<4);
+// console.log(sortWordsArr);
+//
+//
 // // -- перебрать массив при помощи map() и получить новый массив в котором все значения будут со знаком "!" в конце
-// sortWords = words.map(value => value+'!');
-// console.log(sortWords);
-// console.log(words);
+//
+// sortWordsArr = wordsArray.map(value => value+'!');
+// console.log(sortWordsArr);
 
+//
 // Все робити через функції масивів (foreach, map ...тд)
 // Дан масив :
-// const users = [ {name: 'vasya', age: 31, status: false}, 
-// {name: 'petya', age: 30, status: true}, 
-// {name: 'kolya', age: 29, status: true}, 
-// {name: 'olya', age: 28, status: false},
-//  {name: 'max', age: 30, status: true}, 
-//  {name: 'anya', age: 31, status: false}, 
-//  {name: 'oleg', age: 28, status: false}, 
-//  {name: 'andrey', age: 29, status: true}, 
-//  {name: 'masha', age: 30, status: true}, 
-//  {name: 'olya', age: 31, status: false}, 
-//  {name: 'max', age: 31, status: true} ];
+//    const users = [
+//         {name: 'vasya', age: 31, status: false},
+//         {name: 'petya', age: 30, status: true},
+//         {name: 'kolya', age: 29, status: true},
+//         {name: 'olya', age: 28, status: false},
+//         {name: 'max', age: 30, status: true},
+//         {name: 'anya', age: 31, status: false},
+//         {name: 'oleg', age: 28, status: false},
+//         {name: 'andrey', age: 29, status: true},
+//         {name: 'masha', age: 30, status: true},
+//         {name: 'olya', age: 31, status: false},
+//         {name: 'max', age: 31, status: true}
+//         ];
+//
 // // - відсортувати його за  віком (зростання , а потім окремо спадання)
-// let usersSort = users.sort((a,b) => a.age-b.age);
-// console.log(users);
-
-// usersSort = users.sort((a,b) => b.age-a.age);
-// console.log(users);
-// // - відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
-// usersSort = users.sort((a,b)=> a.name.length-b.name.length);
-// console.log(users);
-
-// usersSort = users.sort((a,b)=> b.name.length-a.name.length);
-// console.log(users);
-
-// // - пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
-// const newUsers = JSON.parse(JSON.stringify(users));
-
-// usersSort = newUsers.map((user, index) => {
-//     user.id = (index+1)*user.age;
-
+//
+// let sortUsers = users.sort(function (a,b){
+//     return a.age-b.age
+// })
+// console.log(sortUsers);
+//
+// sortUsers = users.sort(function (a,b){
+//     return b.age-a.age
 // });
-// console.log(newUsers);
+// console.log(sortUsers);
+//
+// // - відсортувати його за кількістю знаків в імені  (зростання , а потім окремо спадання)
+//
+// sortUsers = users.sort(function (a,b){
+//     return a.name.length - b.name.length
+// })
+// console.log(sortUsers);
+//
+// sortUsers = users.sort(function (a,b){
+//     return b.name.length - a.name.length;
+// });
+// console.log(sortUsers);
+//
+// // - пройтись по ньому та додати кожному юзеру поле id - яке характеризує унікальний індентифікатор
+// // (По якому принципу його створювати - ваше рішення), та зберегти це в новий масив (первинний масив залишиться без змін)
+//
+// const newUserArr = JSON.parse(JSON.stringify(users));
+//
+// sortUsers = newUserArr.map((value, index) => {
+//     value.id = (index*2)+value.age;
+// } );
+// console.log(newUserArr);
+// // - відсортувати його за індентифікатором
+//
+// sortUsers = newUserArr.sort((a,b)=>a.id-b.id);
+// console.log(sortUsers);
 
-// usersSort = newUsers.sort((a, b) => b.id-a.id);
-// console.log(usersSort);
-// - відсортувати його за індентифікатором
-
-
+//
+//
 // -- наисать функцию калькулятора с 2мя числами и колбеком
-const calculate = function(a,b, callback){
-    callback(a,b);
-}
-calculate(10,20, function(a,b){
-    let result = a+b
-    console.log(result)
-});
-calculate(15,20, (a,b)=>console.log(a+b));
 
-
-
-
+// const calculator = function (a,b, callback){
+//   return  callback (a,b)
+// };
+// const result = calculator(10,20, function (a,b){
+//    return a+b;
+// });
+// console.log(result);
 
 // -- наисать функцию калькулятора с 3мя числами и колбеком
-const calculate1 = function(a,b,c, callback){
-    callback(a,b,c);
-}
-calculate1(10,20,30, (a,b,c)=>console.log(a+b+c));
-calculate1(15,20,30, (a,b,c)=>console.log(a+b+c));
 
+// const calculate = function (a,b,c, callback){
+//     return callback(a,b,c);
+// };
+//
+// const result = calculate(30,20,30, function (a,b,c){
+//     return a+b-c;
+// });
+// console.log(result);
+
+//
 // =============================================
 // =============================================
 // =============КЛАССНАЯ РАБОТА=================
 // =============================================
 // =============================================
-
-
-
-
-// const cars = [ {producer:"subaru",model: "wrx",year: 2010, color:"blue",type: "sedan",engine: "ej204x",volume: 2,power: 400},
-//  {producer:"subaru",model: "legacy",year: 2007, color:"silver",type: "sedan",engine: "ez30",volume: 3,power: 250}, 
-//  {producer:"subaru",model: "tribeca",year: 2011, color:"white",type: "jeep",engine: "ej20",volume: 2,power: 300}, 
-//  {producer:"subaru",model: "leone",year: 1998, color:"yellow",type: "sedan",engine: "ez20x",volume: 2,power: 140}, 
-//  {producer:"subaru",model: "impreza",year: 2014, color:"red",type: "sedan",engine: "ej204x",volume: 2,power: 200}, 
-//  {producer:"subaru",model: "outback",year: 2014, color:"red",type: "hachback",engine: "ej204",volume: 2,power: 165}, 
-//  {producer:"bmw",model: "115",year: 2013, color:"red",type: "hachback",engine: "f15",volume: 1.5,power: 120}, 
-//  {producer:"bmw",model: "315",year: 2010, color:"white",type: "sedan",engine: "f15",volume: 1.5, power: 120}, 
-//  {producer:"bmw",model: "650",year: 2009, color:"black",type: "coupe",engine: "f60",volume: 6,power: 350}, 
-//  {producer:"bmw",model: "320",year: 2012, color:"red",type: "sedan",engine: "f20",volume: 2,power: 180}, 
-//  {producer:"mercedes",model: "e200",year: 1990, color:"silver",type: "sedan",engine: "eng200",volume: 2,power: 180}, 
-//  {producer:"mercedes",model: "e63",year: 2017, color:"yellow",type: "sedan",engine: "amg63",volume:3,power: 400}, 
-//  {producer:"mercedes",model: "c250",year: 2017, color:"red",type: "sedan",engine: "eng25",volume: 2.5,power: 230} 
+//
+//
+//
+//
+// let cars = [ {producer:"subaru",model: "wrx",year: 2010, color:"blue",type: "sedan",engine: "ej204x",volume: 2,power: 400},
+// {producer:"subaru",model: "legacy",year: 2007, color:"silver",type: "sedan",engine: "ez30",volume: 3,power: 250},
+// {producer:"subaru",model: "tribeca",year: 2011, color:"white",type: "jeep",engine: "ej20",volume: 2,power: 300},
+// {producer:"subaru",model: "leone",year: 1998, color:"yellow",type: "sedan",engine: "ez20x",volume: 2,power: 140},
+// {producer:"subaru",model: "impreza",year: 2014, color:"red",type: "sedan",engine: "ej204x",volume: 2,power: 200},
+// {producer:"subaru",model: "outback",year: 2014, color:"red",type: "hachback",engine: "ej204",volume: 2,power: 165},
+// {producer:"bmw",model: "115",year: 2013, color:"red",type: "hachback",engine: "f15",volume: 1.5,power: 120},
+// {producer:"bmw",model: "315",year: 2010, color:"white",type: "sedan",engine: "f15",volume: 1.5, power: 120},
+// {producer:"bmw",model: "650",year: 2009, color:"black",type: "coupe",engine: "f60",volume: 6,power: 350},
+// {producer:"bmw",model: "320",year: 2012, color:"red",type: "sedan",engine: "f20",volume: 2,power: 180},
+// {producer:"mercedes",model: "e200",year: 1990, color:"silver",type: "sedan",engine: "eng200",volume: 2,power: 180},
+// {producer:"mercedes",model: "e63",year: 2017, color:"yellow",type: "sedan",engine: "amg63",volume:3,power: 400},
+// {producer:"mercedes",model: "c250",year: 2017, color:"red",type: "sedan",engine: "eng25",volume: 2.5,power: 230}
 // ];
 // // Відфільтрувати масив за наступними крітеріями :
-// // - двигун більше 3х літрів
+//
+// //     - двигун більше 3х літрів
+//
 // let carFilter = cars.filter(value => value.volume>3);
 // console.log(carFilter);
+//
+//
 // // - двигун = 2л
-// carFilter = cars.filter(value => value.volume ===2);
+//
+// carFilter = cars.filter(value => value.volume===2);
 // console.log(carFilter);
-
+//
 // // - виробник мерс
-// carFilter = cars.filter(value => value.producer === "mercedes");
+//
+// carFilter = cars.filter(value => value.producer === 'mercedes');
 // console.log(carFilter);
-
+//
 // // - двигун більше 3х літрів + виробник мерседес
-// carFilter = cars.filter(value => value.producer === 'mercedes' && value.volume>3);
+//
+// carFilter = cars.filter(value => value.volume>3 && value.producer === 'mercedes');
 // console.log(carFilter);
-
+//
 // // - двигун більше 3х літрів + виробник субару
-// carFilter = cars.filter(value => value.volume>=3 && value.producer === 'subaru');
+//
+// carFilter = cars.filter(value => value.volume>3 && value.producer === 'subaru');
 // console.log(carFilter);
-
+//
 // // - сили більше ніж 300
-// carFilter = cars.filter(value => value.power>300);
+//
+// carFilter = cars.filter(value => value.power>300 );
 // console.log(carFilter);
-
+//
+//
 // // - сили більше ніж 300 + виробник субару
-// carFilter = cars.filter(value => value.power>300 && value.producer === "subaru");
+//
+// carFilter = cars.filter(value => value.power>300 && value.producer === 'subaru');
 // console.log(carFilter);
-
-
+//
 // // - мотор серіі ej
 // carFilter = cars.filter(value => value.engine.startsWith('ej'));
 // console.log(carFilter);
-
+//
 // // - сили більше ніж 300 + виробник субару + мотор серіі ej
+//
 // carFilter = cars.filter(value => value.power>300 && value.producer === 'subaru' && value.engine.startsWith('ej'));
 // console.log(carFilter);
-
+//
 // // - двигун меньше 3х літрів + виробник мерседес
-// carFilter = cars.filter(value => value.volume<300 && value.producer === 'mercedes');
+//
+// carFilter = cars.filter(value => value.volume<3 && value.producer === 'mercedes');
 // console.log(carFilter);
-
+//
 // // - двигун більше 2л + сили більше 250
-// carFilter = cars.filter(value => value.volume<200 && value.power>250);
+//
+// carFilter = cars.filter(value => value.volume>2 && value.power>250);
 // console.log(carFilter);
-
-
+//
 // // - сили більше 250  + виробник бмв
 // carFilter = cars.filter(value => value.power>250 && value.producer === 'bmw');
 // console.log(carFilter);
 
-
-
+//
+//
+//
 // - взять слдующий массив
-// const usersWithAddress = [
-//     {id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}}, 
-//     {id: 2, name: 'petya', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 1}}, 
-//     {id: 3, name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}}, 
-//     {id: 4, name: 'olya', age: 28, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 90}}, 
-//     {id: 5, name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}}, 
-//     {id: 6, name: 'anya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 2}}, 
-//     {id: 7, name: 'oleg', age: 28, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 22}}, 
-//     {id: 8, name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}}, 
-//     {id: 9, name: 'masha', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 12}}, 
-//     {id: 10, name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
-//     {id: 11, name: 'max', age: 31, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}}
-//     ];
+// let usersWithAddress = [
+// {id: 1, name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+// {id: 2, name: 'petya', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 1}},
+// {id: 3, name: 'kolya', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}},
+// {id: 4, name: 'olya', age: 28, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 90}},
+// {id: 5, name: 'max', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 115}},
+// {id: 6, name: 'anya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 2}},
+// {id: 7, name: 'oleg', age: 28, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 22}},
+// {id: 8, name: 'andrey', age: 29, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 43}},
+// {id: 9, name: 'masha', age: 30, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 12}},
+// {id: 10, name: 'olya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},
+// {id: 11, name: 'max', age: 31, status: true, address: {city: 'Lviv', street: 'Shevchenko', number: 121}}
+// ];
 // // -- отсортировать его по id пользователей
-// let users = usersWithAddress.sort((a,b) => a.id-b.id);
-// console.log(users);
+//
+// let sortUsers = usersWithAddress.sort(function (a, b){
+//     return a.id-b.id
+// });
+// console.log(sortUsers);
+//
+//
 // // -- отсортировать его по id пользователей в обратном опрядке
-//  users = usersWithAddress.sort((a,b) => b.id-a.id);
-// console.log(users);
+// sortUsers = usersWithAddress.sort((a,b)=>b.id-a.id);
+// console.log(sortUsers);
+//
 // // -- отсортировать его по возрасту пользователей
-// users = usersWithAddress.sort((a,b) => a.age-b.age);
-// console.log(users);
+//
+// sortUsers = usersWithAddress.sort((a,b)=>a.age-b.age);
+// console.log(sortUsers);
+//
 // // -- отсортировать его по возрасту пользователей в обратном порядке
-// users = usersWithAddress.sort((a,b) => b.age-a.age);
-// console.log(users);
+// sortUsers = usersWithAddress.sort((a,b)=>b.age-a.age);
+// console.log(sortUsers);
+//
 // // -- отсортировать его по имени пользователей
-// users = usersWithAddress.sort((a,b) => a.name-b.name);
-// console.log(users);
+//
+// sortUsers = usersWithAddress.sort(function (a,b){
+//     if(a.name>b.name){
+//         return 1;
+//     } return -1
+// });
+// console.log(sortUsers);
+//
 // // -- отсортировать его по имени пользователей в обратном порядке
-// users = usersWithAddress.sort((a,b) => b.name-a.name);
-// console.log(users);
+// sortUsers = usersWithAddress.sort(function (a,b){
+//     if(a.name>b.name){
+//         return -1;
+//     } return 1
+// });
+// console.log(sortUsers);
 // // -- отсортировать его по названию улицы  в алфавитном порядке
-// users = usersWithAddress.sort((a,b)=> a.address.street-b.address.street);
-// console.log(users);
+//
+// sortUsers = usersWithAddress.sort(function (a,b){
+//     if(a.address.street>b.address.street){
+//         return 1
+//     }return -1
+// })
+// console.log(sortUsers);
+//
 // // -- отсортировать его по номеру дома по возрастанию
-// users = usersWithAddress.sort((a,b)=> a.address.number-b.address.number);
-// console.log(users);
+//
+// sortUsers = usersWithAddress.sort((a, b) => a.address.number-b.address.number);
+// console.log(sortUsers);
+//
 // // -- отфильтровать (оставить) тех кто младше 30
-// // users = usersWithAddress.filter(user => user.age<30);
-// // console.log(users);
+//
+// // sortUsers = usersWithAddress.filter(value => value.age<30);
+// // console.log(sortUsers);
+//
 // // -- отфильтровать (оставить) тех у кого отрицательный статус
-// // users = usersWithAddress.filter(user => user.status === false);
-// // console.log(users);
+//
+// // sortUsers = usersWithAddress.filter(value => value.status === false);
+// // console.log(sortUsers);
+//
 // // -- отфильтровать (оставить) тех у кого отрицательный статус и младше 30 лет
-// // users = usersWithAddress.filter(user => user.status === false && user.age<30);
-// // console.log(users);
+// // sortUsers = usersWithAddress.filter(value => value.status === false && value.age<30);
+// // console.log(sortUsers);
+//
 // // -- отфильтровать (оставить) тех у кого номер дома четный
-// users = usersWithAddress.filter(user => user.address.number%2===0);
-// console.log(users);
+// sortUsers = usersWithAddress.filter(value => value.address.number%2===0);
+// console.log(sortUsers);
 
-
+//
 // ===========================
 // ======ДОПОЛНИТЕЛЬНО========
 // ===========================
-
+//
 // Створити обєкт автомобіля з полями:
-// Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
-// Власник автомобіля теж має бути обєкт, у якого є поля
+//     Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
+//     Власник автомобіля теж має бути обєкт, у якого є поля
 // Імя, вік, стаж водіння.
-// Створити не менше 7 та не більше 20 машинок.
-// Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
+//     Створити не менше 7 та не більше 20 машинок.
+//     Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
 // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
-// Далі необхідно брати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
-// Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
-// Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
-
-
+//     Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
+// Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації,
+// що збільшить йому досвід на 1 рік.
+//     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
+//
+//
 // Задача: дан отсортированный по возрастанию массив целых чисел. Необходимо вернуть наименьший и наибольший индекс заданного элемента.
-// Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
-// Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
-
+//     Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
+//     Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
+//
 // Пример:
-// Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
+//     Arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
 // 1. Key = 1
 // Answer: MinIndex = 0, MaxIndex = 0.
 // 2. Key = 4
 // Answer: MinIndex = 3, MaxIndex = 6.
+
 
